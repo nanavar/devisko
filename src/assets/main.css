@@ -1,0 +1,140 @@
+@import "./base.css";
+@font-face {
+  font-family: "Lato";
+  src: url("./fonts/Lato-Regular.woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Lato";
+  src: url("./fonts/Lato-Medium.woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Lato";
+  src: url("./fonts/Lato-Semibold.woff");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Prata";
+  src: url("./fonts/Prata-Regular-400.woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-dark);
+  background-color: var(--color-background);
+}
+
+p {
+  font-size: 1rem;
+}
+
+@media (min-width: 1000px) {
+  p {
+    font-size: 1.15rem;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-title);
+}
+
+a {
+  font-weight: 600;
+  text-decoration: none;
+}
+
+h2 {
+  font-size: 1.65rem;
+  color: var(--color-primary);
+}
+
+main {
+  margin: 6.5em auto 4em auto;
+}
+
+.container {
+  margin: auto 1.87em;
+}
+
+@media (min-width: 768px) {
+  main {
+    margin: 6.5em 6.25em auto 6.25em;
+  }
+}
+
+@media (min-width: 1000px) {
+  main {
+    margin: 6.5em 10%;
+  }
+  .page-title {
+    font-size: 2.5rem !important;
+  }
+}
+
+.page-title {
+  font-size: 2rem;
+  text-align: center;
+  color: var(--color-primary);
+  margin: 1.6em auto 0.5em auto;
+  padding-top: 1.87em;
+}
+.sub-page-title {
+  font-size: 2.2rem;
+  text-align: center;
+  color: var(--color-primary);
+  margin: 1.6em auto 0.5em auto;
+}
+
+/* BUTTONS */
+
+.main-btn {
+  padding: 0.63em 0.63em !important;
+  font-size: 1rem !important;
+  border-radius: 6px;
+}
+
+.btn-dark {
+  background: var(--color-dark);
+  color: var(--color-white);
+  border: 3px solid var(--color-dark);
+  transition: 0.3s ease;
+}
+.btn-primary {
+  background: var(--color-primary) !important;
+  color: var(--color-white) !important;
+  border: 3px solid var(--color-primary) !important;
+  transition: 0.3s ease;
+  text-align: center;
+  min-width: 14.5rem;
+  margin: auto;
+}
+
+.btn-dark:hover,
+.btn-outline:hover,
+.btn-primary:hover {
+  background: var(--color-light-gray) !important;
+  color: var(--color-dark) !important;
+  border-color: var(--color-light-gray) !important;
+}
+
+.btn-outline {
+  border: 3px solid var(--color-primary);
+  color: var(--color-dark);
+}
+
+.btn-gray {
+  background: var(--color-light-gray);
+  color: var(--color-dark);
+  border-color: var(--color-light-gray);
+}
